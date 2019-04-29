@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_for_activity"
+        android:id="@+id/stoolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stoolbar">
+
+        <RelativeLayout
+            android:id="@+id/rlmain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stoolbar">
+    <RelativeLayout
+        android:id="@+id/rlcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittxt_box"
+        >
+
+        <TextView
+            android:id="@+id/tv_sreq_title"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/Black"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textStyle="normal"
+            android:layout_marginBottom="5dp"
+            />
+        <View
+            android:id="@+id/vwheader"
+            android:layout_below="@+id/tv_sreq_title"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/btn_grey"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:background="@drawable/spinner_subtype_border"
+            android:id="@+id/spSubType"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/vwheader"
+            android:layout_margin="10dp"
+            android:overlapAnchor="false"
+            android:popupBackground="@color/sp_time_bg"
+            android:dropDownVerticalOffset="1dp"
+            android:spinnerMode="dropdown"
+            android:theme="@style/MatchSpinnerTheme"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/img_srqPic"
+            android:layout_below="@+id/spSubType"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:src="@drawable/takepic"
+            android:scaleType="fitXY"
+            android:padding="1dp"
+            android:background="@drawable/edittxt_box"/>
+
+
+        <TextView
+            android:id="@+id/tv_srq_date"
+            android:layout_below="@+id/spSubType"
+            android:layout_toRightOf="@+id/img_srqPic"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/calendargray"
+            android:drawablePadding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_srq_building"
+            android:layout_below="@+id/tv_srq_date"
+            android:layout_toRightOf="@+id/img_srqPic"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/buildingimg"
+            android:drawablePadding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_service_addr"
+            android:layout_below="@+id/tv_srq_building"
+            android:layout_toRightOf="@+id/img_srqPic"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/mapgray"
+            android:drawablePadding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+      <!--  <android.support.v7.widget.AppCompatSpinner
+            android:background="@drawable/spinner_border"
+            android:id="@+id/spTime"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/img_srqPic"
+            android:layout_margin="10dp"
+            android:overlapAnchor="false"
+            android:popupBackground="@color/sp_time_bg"
+            android:dropDownVerticalOffset="1dp"
+            android:spinnerMode="dropdown"
+            android:theme="@style/MatchSpinnerTheme"
+            android:gravity="center"
+            android:visibility="gone"
+            />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/img_srqPic"
+            android:id="@+id/llt_datetime">
+
+            <TextView
+                android:id="@+id/tv_req_cal_date"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittxt_box"
+                android:hint="Choose date"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dp"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+            <!-- <TextView
+                 android:id="@+id/tv_res_cal_time"
+                 android:layout_width="wrap_content"
+                 android:layout_height="30dp"
+                 android:layout_marginTop="10dp"
+                 android:layout_marginBottom="10dp"
+                 android:layout_marginLeft="5dp"
+                 android:layout_weight="1"
+                 android:background="@drawable/edittxt_box"
+                 android:hint="Reschedule time"
+                 android:paddingLeft="5dip"
+                 android:paddingRight="5dp"
+                 android:textColor="@color/black"
+                 android:textSize="13sp"
+                 android:gravity="center"
+                 android:visibility="gone"
+                 />
+-->
+            <android.support.v7.widget.AppCompatSpinner
+                android:background="@drawable/edittxt_box"
+                android:id="@+id/spTime"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:overlapAnchor="false"
+                android:popupBackground="@color/sp_time_bg"
+                android:dropDownVerticalOffset="1dp"
+                android:spinnerMode="dropdown"
+                android:theme="@style/MatchSpinnerTheme"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_srq_note"
+            android:hint="Please describe your service notes"
+            android:gravity="top"
+            android:padding="5dp"
+            android:layout_below="@+id/llt_datetime"
+            android:textSize="14sp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@android:color/transparent"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit_request"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/rlcontainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/buttonshape"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

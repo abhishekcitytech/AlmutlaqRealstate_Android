@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardElevation="5dp"
+        >
+        <LinearLayout
+            android:background="@drawable/ll_dialog_design"
+            android:id="@+id/cpredictedRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:id="@+id/tvss_TitleHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Give your feedback"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"
+                    />
+            <View
+                android:id="@+id/cvwe"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/btn_grey"/>
+
+            <ImageView
+                android:id="@+id/img_emojiHint"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logofdbck"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/tv_fdbck_Emoji"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:textSize="80sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/tv_fdbckmoji_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:hint="Rate this service"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+    <RatingBar
+        android:id="@+id/rating_feedbck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:stepSize="1"
+        android:numStars="5"
+        android:isIndicator="false"
+        android:layout_gravity="center_horizontal"
+        android:theme="@style/RatingBar"
+        />
+            <EditText
+                android:id="@+id/et_ss_note"
+                android:gravity="top"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:hint="Note"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@drawable/edittxt_box"
+                />
+
+
+            <View
+                android:id="@+id/cvw"
+                    android:layout_below="@+id/tvcTitleHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/btn_grey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@color/btn_grey">
+
+                <TextView
+                    android:id="@+id/tv_fdback_cancel"
+                    android:gravity="center"
+                    android:text="Not now"
+                    android:textSize="18sp"
+                    android:textColor="@color/Red"
+                    android:textStyle="normal|bold"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:padding="10dp"/>
+                <TextView
+                    android:id="@+id/tv_fdback_submit"
+                    android:gravity="center"
+                    android:text="Submit"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="normal|bold"
+                    android:background="@color/white"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

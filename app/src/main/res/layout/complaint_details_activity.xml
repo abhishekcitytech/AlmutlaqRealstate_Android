@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_for_activity"
+             android:id="@+id/cdetailstoolbar"/>
+
+    <TextView
+        android:id="@+id/tvCdetails_title"
+        android:text="complain for last service"
+        android:textColor="@color/black"
+        android:layout_below="@+id/cdetailstoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"/>
+
+    <View
+        android:id="@+id/vw"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/btn_grey"
+        android:layout_below="@+id/tvCdetails_title"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/tvCdetails_description"
+        android:text="Description : "
+        android:layout_below="@+id/vw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/btn_cdetails_open"
+        android:text="OPEN"
+        android:gravity="center"
+        android:textColor="@color/open_complain_color"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/vw"
+     />
+    <TextView
+        android:id="@+id/btn_cdetails_closed"
+        android:text="CLOSED"
+        android:textColor="@color/close_complain_color"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/vw"
+        android:visibility="gone"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_problem"
+        android:text="Problem"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/tvCdetails_description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:textSize="14sp"
+        android:background="@drawable/edittxt_box"/>
+
+    <TextView
+        android:id="@+id/tv_close_note"
+        android:text="Closed Note:"
+        android:padding="5dp"
+        android:textColor="@color/close_note_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:gravity="center|left"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

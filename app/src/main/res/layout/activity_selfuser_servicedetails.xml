@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="com.almutlaq.realstate.activity.SelfsuserServicesDetails"
+                tools:showIn="@layout/activity_self_servicedetails_main"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    >
+
+    <include layout="@layout/toolbar_for_activity"
+             android:id="@+id/stoolbar"/>
+    <RelativeLayout
+        android:id="@+id/rlcontainer"
+        android:layout_below="@+id/stoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittxt_box"
+        >
+        <TextView
+            android:id="@+id/tv_subtype_title"
+            android:text="Service sub type : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/Black"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textStyle="normal"
+            android:layout_marginBottom="5dp"
+            />
+
+        <View
+            android:id="@+id/vwheader1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_subtype_title"
+            android:background="@color/btn_grey"/>
+
+        <TextView
+            android:id="@+id/tv_sreq_title"
+            android:text="Tenant : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textStyle="normal"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/vwheader1"
+            />
+        <View
+            android:id="@+id/vwheader"
+            android:layout_below="@+id/tv_sreq_title"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/btn_grey"/>
+
+        <TextView
+            android:id="@+id/tv_srq_date"
+            android:layout_below="@+id/vwheader"
+            android:layout_toLeftOf="@+id/img_srqPic"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/calendargray"
+            android:drawablePadding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            />
+
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_srqPic"
+            android:layout_below="@+id/vwheader"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:backgroundImage="@drawable/no_image"
+            fresco:placeholderImage="@drawable/no_image"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:pressedStateOverlayImage="@drawable/no_image"
+            fresco:roundAsCircle="false"
+            fresco:roundedCornerRadius="5dp"
+            fresco:roundingBorderColor="@color/btn_grey"
+            fresco:roundingBorderWidth="1dp"
+            android:layout_alignParentRight="true"
+            android:padding="1dp"
+            android:background="@drawable/edittxt_box"
+           />
+
+        <TextView
+            android:id="@+id/tv_cs_service_date"
+            android:text=""
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/calendargray"
+            android:drawablePadding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="visible"
+            android:layout_below="@+id/img_srqPic"
+            />
+
+        <TextView
+            android:id="@+id/tv_cs_reporting_date"
+            android:text=""
+            android:layout_below="@+id/tv_cs_service_date"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/calendargray"
+            android:drawablePadding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="visible"
+            />
+
+        <LinearLayout
+            android:id="@+id/llsbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_below="@+id/tv_cs_reporting_date"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:id="@+id/cs_details_reqtime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Requested Time \n "
+                android:background="@color/Goldenrod"
+                android:textColor="@color/white"
+                android:padding="5dp"
+
+                android:gravity="center"
+                />
+            <TextView
+               android:id="@+id/cs_details_resptime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Reporting Time \n "
+                android:background="@color/tool_blue"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:gravity="center"
+                android:visibility="visible"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_srq_building"
+            android:text="Building no :"
+            android:layout_below="@+id/llsbox"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/buildingimg"
+            android:drawablePadding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_service_addr"
+            android:layout_below="@+id/tv_srq_building"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/mapgray"
+            android:drawablePadding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/et_srq_note"
+            android:gravity="top"
+            android:padding="5dp"
+            android:layout_below="@+id/tv_service_addr"
+            android:textSize="14sp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+           />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_update_sstatus"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+       android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="132dp"
+        android:background="@color/tool_blue"
+        android:text="Update Service Status"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_acknowledge"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="132dp"
+        android:background="@color/Gray"
+        android:text="Acknowledge"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="132dp"
+        android:background="@color/close_color"
+        android:text="Closed"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_status_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="132dp"
+        android:background="@color/Red"
+        android:text="Cancelled"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>

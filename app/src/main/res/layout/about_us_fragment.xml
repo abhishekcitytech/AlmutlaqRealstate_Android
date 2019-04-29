@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/white"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/img_aboutus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:backgroundImage="@drawable/no_image"
+        fresco:placeholderImage="@drawable/no_image"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:pressedStateOverlayImage="@drawable/no_image"
+        fresco:roundAsCircle="true"
+        fresco:roundedCornerRadius="5dp"
+        fresco:roundingBorderColor="@color/white"
+        fresco:roundingBorderWidth="1dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+    
+    <TextView
+        android:id="@+id/tv_comp_name"
+        android:text="Mutlaq Al Mutlaq Real Estate"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="normal|bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_aboutus"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+       />
+
+    <ImageView
+        android:id="@+id/imgloc"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_location_on_white"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/img_aboutus"
+        android:layout_below="@+id/tv_comp_name"/>
+    <TextView
+        android:id="@+id/tvAddress"
+        android:text="Address "
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgloc"
+        android:layout_below="@+id/tv_comp_name"
+        android:layout_marginRight="10dp"
+        android:maxLines="3"
+        />
+
+ <!--   <ImageView
+        android:id="@+id/img_comp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mutlaqofc"
+        android:layout_below="@+id/img_aboutus"
+        android:layout_margin="10dp"/>-->
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/img_comp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:backgroundImage="@drawable/no_image"
+        fresco:placeholderImage="@drawable/no_image"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:pressedStateOverlayImage="@drawable/no_image"
+        fresco:roundAsCircle="false"
+        fresco:roundedCornerRadius="5dp"
+        fresco:roundingBorderColor="@color/btn_grey"
+        fresco:roundingBorderWidth="1dp"
+        android:layout_below="@+id/img_aboutus"/>
+
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/img_comp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_above="@+id/llbtn"
+        >
+
+        <!--<TextView
+            android:id="@+id/tv_comp_description"
+            android:text="@string/about_content"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="left"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            android:visibility="gone"/>-->
+
+        <WebView
+            android:id="@+id/wb_comp_description"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:textAlignment="center">
+
+        </WebView>
+
+
+    </ScrollView>
+
+  <LinearLayout
+      android:id="@+id/llbtn"
+      android:layout_width="match_parent"
+      android:layout_height="80dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginLeft="10dp"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="10dp"
+      android:weightSum="2"
+      >
+     <!-- <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:orientation="vertical"
+          android:background="@color/tool_blue"
+          android:layout_margin="1dp"
+          android:visibility="gone">
+
+          <ImageView
+              android:layout_width="24dp"
+              android:layout_height="24dp"
+              android:src="@drawable/ic_location_on_white"
+              android:scaleType="centerCrop"
+              android:layout_gravity="center"
+              android:layout_margin="10dp"/>
+
+          <TextView
+              android:id="@+id/tvAddress"
+              android:textSize="13sp"
+              android:textColor="@color/white"
+              android:text="Address"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="5dp"
+              android:layout_marginLeft="5dp"
+              android:layout_marginBottom="10dp"
+              android:gravity="center"/>
+
+      </LinearLayout>-->
+      <LinearLayout
+          android:id="@+id/llWebsite"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:orientation="vertical"
+          android:background="@color/tool_blue"
+          android:layout_margin="1dp"
+          android:layout_gravity="center"
+          android:gravity="center">
+
+          <ImageView
+              android:layout_width="24dp"
+              android:layout_height="24dp"
+              android:src="@drawable/websitewhite"
+              android:scaleType="centerCrop"
+              android:layout_gravity="center"
+              android:layout_margin="10dp"
+              android:visibility="gone"/>
+
+          <TextView
+              android:id="@+id/tv_comp_url"
+              android:linksClickable="true"
+              android:textColorLink="@color/white"
+              android:textSize="18sp"
+              android:textColor="@color/white"
+              android:text="Website"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:gravity="center"/>
+
+      </LinearLayout>
+      <LinearLayout
+          android:id="@+id/llvideo"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:background="@color/white"
+          android:layout_margin="1dp"
+          android:orientation="vertical">
+
+       <VideoView
+           android:id="@+id/comp_video"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:visibility="gone"/>
+
+          <FrameLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+          <ImageView
+              android:id="@+id/img_thumnail"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_centerInParent="true"
+              android:scaleType="fitXY" />
+
+        <ImageView
+               android:id="@+id/iv_play_pause"
+               android:layout_width="35dp"
+               android:layout_height="35dp"
+               android:layout_gravity="center"
+               android:src="@drawable/videowhite"
+            android:scaleType="fitXY"/>
+
+          </FrameLayout>
+
+      </LinearLayout>
+
+  </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/tv_date_title"
+        android:textSize="16sp"
+        android:text="Date :"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvHistorydate"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/tv_note_title"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/tv_engineer_title"
+        android:textSize="16sp"
+        android:text="Engineer :"
+        android:textStyle="bold"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/tv_date_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvEngineerName"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/tv_engineer_title"
+        android:layout_below="@+id/tvHistorydate"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_job_percent_title"
+        android:textSize="16sp"
+        android:text="Job Completion :"
+        android:textStyle="bold"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/tv_engineer_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_job_percent"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/tv_job_percent_title"
+        android:layout_below="@+id/tvEngineerName"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_note_title"
+        android:textSize="16sp"
+        android:text="Note :"
+        android:layout_below="@+id/tv_job_percent_title"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tvHistoryrow"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/tv_note_title"
+        android:layout_below="@+id/tv_job_percent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_below="@+id/tvHistoryrow"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Gray"/>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "547708576057",
+    "firebase_url": "https://almutlaq-realstate.firebaseio.com",
+    "project_id": "almutlaq-realstate",
+    "storage_bucket": "almutlaq-realstate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547708576057:android:b7fade765faf35c2",
+        "android_client_info": {
+          "package_name": "com.almutlaq.realstate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547708576057-ni1qmrthc1smmg09bo0g51jrppd04rnv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.almutlaq.realstate",
+            "certificate_hash": "eb897f39e8bc7c8bb618a3e897b42999ce5a9bf2"
+          }
+        },
+        {
+          "client_id": "547708576057-40cj0tk3i3qlc3jafcbvgg49he5orrk6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASjycGOyErnMjUIdwp4cJsf7Hm8lDopHg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "547708576057-40cj0tk3i3qlc3jafcbvgg49he5orrk6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

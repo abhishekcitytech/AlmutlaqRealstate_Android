@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        app:cardElevation="5dp"
+        >
+        <LinearLayout
+            android:background="@drawable/ll_dialog_design"
+            android:id="@+id/cpredictedRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:id="@+id/tvcTitleHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Confirmation"
+                    android:textSize="18sp"
+                    android:textStyle="bold|normal"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/heading"
+                    android:layout_below="@+id/tvcTitleHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="message"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="20dp"
+                    />
+
+
+                <View
+                    android:id="@+id/cvw"
+                    android:layout_below="@+id/tvcTitleHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/btn_grey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="@color/btn_grey">
+
+                <TextView
+                    android:id="@+id/tvcancelfcm"
+                    android:gravity="center"
+                    android:text="Cancel"
+                    android:textSize="18sp"
+                    android:textColor="@color/Red"
+                    android:textStyle="normal|bold"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="1dp"
+                    android:padding="10dp"/>
+                <TextView
+                    android:id="@+id/tvokfcm"
+                    android:gravity="center"
+                    android:text="Ok"
+                    android:textSize="18sp"
+                    android:textColor="@color/tool_blue"
+                    android:textStyle="normal|bold"
+                    android:background="@color/white"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

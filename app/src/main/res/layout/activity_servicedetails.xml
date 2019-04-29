@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="com.almutlaq.realstate.activity.ServiceDetails"
+                tools:showIn="@layout/tenant_service_details_main">
+<include layout="@layout/toolbar_for_activity"
+    android:id="@+id/stoolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/stoolbar"
+        >
+
+    <RelativeLayout
+        android:layout_below="@+id/stoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittxt_box"
+       >
+
+        <TextView
+            android:id="@+id/tv_service_title"
+            android:text="Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/Black"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textStyle="normal"
+            />
+
+        <ImageView
+            android:id="@+id/imgAck"
+            android:src="@drawable/ic_right_green"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="5dp"/>
+
+        <View
+            android:id="@+id/vwheader"
+            android:layout_below="@+id/tv_service_title"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/btn_grey"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_subservice"
+            android:text="Subservice"
+            android:layout_below="@+id/vwheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/Black"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textStyle="normal"
+            />
+
+
+        <View
+            android:id="@+id/vwsubservice"
+            android:layout_below="@+id/tv_subservice"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/btn_grey"
+            android:layout_marginTop="10dp"/>
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_service"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_margin="10dp"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:backgroundImage="@drawable/no_image"
+            fresco:placeholderImage="@drawable/no_image"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:pressedStateOverlayImage="@drawable/no_image"
+            fresco:roundAsCircle="false"
+            fresco:roundedCornerRadius="5dp"
+            fresco:roundingBorderColor="@color/btn_grey"
+            fresco:roundingBorderWidth="1dp"
+            android:layout_below="@+id/vwsubservice"/>
+
+        <TextView
+            android:id="@+id/tv_service_date"
+            android:text=""
+            android:layout_below="@+id/img_service"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/calendargray"
+            android:drawablePadding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_reporting_date"
+            android:text=""
+            android:layout_below="@+id/tv_service_date"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/calendargray"
+            android:drawablePadding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:id="@+id/llbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_below="@+id/tv_reporting_date"
+            android:layout_margin="10dp"
+           >
+        <TextView
+            android:id="@+id/tv_Reqest_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Requested Time \n 00.00 - 00.00"
+            android:background="@color/Goldenrod"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:gravity="center"
+            android:visibility="visible"
+            />
+            <TextView
+                android:id="@+id/tv_report_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Reported Time \n 00.00 - 00.00"
+                android:background="@color/tool_blue"
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:gravity="center"
+                android:visibility="visible"
+                />
+
+        </LinearLayout>
+
+        <TextView
+        android:id="@+id/tv_building_no"
+        android:text="Building no : "
+        android:layout_below="@+id/llbox"
+        android:textSize="14sp"
+        android:drawableLeft="@drawable/buildingimg"
+        android:drawablePadding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+        <TextView
+            android:id="@+id/tv_service_addr"
+            android:text="address"
+            android:layout_below="@+id/tv_building_no"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/mapgray"
+            android:drawablePadding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_service_feedback"
+            android:text="note"
+            android:layout_below="@+id/tv_service_addr"
+            android:textSize="14sp"
+            android:textColor="@color/Black"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittxt_box"
+            />
+
+        <LinearLayout
+            android:id="@+id/llpercent"
+            android:layout_below="@+id/tv_service_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittxt_box"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="1.5dp"
+            android:visibility="visible">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvT_StatusPercent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_percentnew"
+            android:layout_below="@+id/llpercent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittxt_box"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="1.5dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

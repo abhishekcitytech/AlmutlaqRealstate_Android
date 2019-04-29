@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="?attr/actionBarSize"
+                                   android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                                   android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:background="@color/tool_blue">
+
+    <ImageView
+        android:id="@+id/imgToolback"
+        android:src="@drawable/ic_arrow_back_white"
+        android:scaleType="fitXY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/toolbartitle"
+        android:text="Title"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+       android:layout_toRightOf="@+id/imgToolback"
+        />
+
+    <ImageView
+        android:id="@+id/imgToolAdd"
+        android:src="@drawable/ic_add_circle_white"
+        android:scaleType="fitXY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/imgTooledit"
+        android:src="@drawable/notehistorynew"
+        android:scaleType="fitXY"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        />
+</RelativeLayout>

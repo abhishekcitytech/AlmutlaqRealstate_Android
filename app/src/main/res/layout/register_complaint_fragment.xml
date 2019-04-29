@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+       >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Complaint"
+            android:gravity="center"
+            android:textColor="@drawable/radio_txt_chk"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/radio_drawable"/>
+
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suggestion"
+            android:textColor="@drawable/radio_txt_chk"
+            android:gravity="center"
+            android:textSize="16sp"
+           android:padding="8dp"
+            android:background="@drawable/radio_drawable_suggestion"
+            android:button="@android:color/transparent"/>
+    </RadioGroup>
+
+    <EditText
+        android:layout_below="@+id/radioGroup1"
+        android:id="@+id/et_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_design"
+        android:hint="Subject"
+        android:imeOptions="actionNext"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+        android:maxLength="85"
+        android:maxLines="5"
+        android:gravity="top|left"
+       />
+
+    <TextView
+        android:id="@+id/tvtitledesription"
+        android:layout_below="@+id/et_subject"
+        android:layout_marginTop="10dp"
+        android:text="Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/Gray"
+        android:layout_margin="10dp"
+        android:visibility="gone"/>
+
+    <EditText
+        android:layout_below="@+id/et_subject"
+        android:gravity="top|left"
+       android:layout_margin="10dp"
+        android:id="@+id/etNote"
+        android:background="@drawable/edittxt_box"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:maxLines="10"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:inputType="textMultiLine"
+        android:hint="Please describe your notes"
+        />
+
+    <Button
+        android:id="@+id/btnRegComplaintSubmit"
+        android:layout_below="@+id/etNote"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Submit"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+
+
+</RelativeLayout>

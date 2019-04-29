@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rel_calender_show"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_below="@+id/include_01"
+        android:background="@android:color/white" />
+   <!-- <View
+        android:id="@+id/vw"
+        android:layout_below="@+id/rel_calender_show"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/btn_grey"/>
+-->
+    <TextView
+        android:layout_below="@+id/rel_calender_show"
+        android:id="@+id/lv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tool_blue"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="@color/white" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_monthlist"
+        android:layout_below="@+id/lv_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"/>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_below="@+id/lv_date"
+        android:id="@+id/tvnodatelist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvcal_Status_title"
+            android:text="AC Maintainance"
+            android:textSize="14sp"
+            android:textColor="@color/Black"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingRight="5dp"/>
+
+        <TextView
+        android:text="Rescheduled"
+        android:orientation="vertical"
+        android:id="@+id/ll_rescheduled"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:textColor="@color/Orange"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:background="@drawable/btn_rescheduled_bg"
+        android:textSize="13sp"
+        />
+        <TextView
+            android:text="Booked"
+            android:orientation="vertical"
+            android:id="@+id/ll_booked"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:textColor="@color/btn_grey"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="visible"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:background="@drawable/btn_booked_bg"
+            android:textSize="13sp"
+            />
+
+
+        <TextView
+            android:id="@+id/tvcal_req_date"
+            android:text="2018-10-03"
+            android:layout_below="@+id/tvcal_Status_title"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tvcal_status_address"
+            android:text="Deira,PO Box 594,Dubai,UAE,B12345,F1"
+            android:layout_below="@+id/tvcal_Status_title"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageView
+            android:id="@+id/imgAcknowledged"
+            android:src="@drawable/ic_right_green"
+            android:layout_below="@+id/ll_booked"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/tvcal_status_address"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            />
+
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tvcal_status_address"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/btn_grey"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

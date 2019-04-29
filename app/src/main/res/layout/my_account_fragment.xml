@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/white"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+    android:id="@+id/rl1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/edittxt_box"
+    android:gravity="center"
+   >
+    <TextView
+        android:id="@+id/tv_customer_title"
+        android:text="Customer Service Profile"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/customer_title_bottom_line"
+        android:layout_below="@+id/tv_customer_title"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c2c2c2"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+      />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/img_account"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:backgroundImage="@drawable/userprof_new"
+        fresco:placeholderImage="@drawable/userprof_new"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:pressedStateOverlayImage="@mipmap/ic_launcher_round"
+        fresco:roundAsCircle="true"
+        fresco:roundedCornerRadius="5dp"
+        fresco:roundingBorderColor="@color/btn_grey"
+        fresco:roundingBorderWidth="1dp"
+       android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_acc_name"
+        android:layout_below="@+id/img_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textSize="16sp"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:id="@+id/tv_acc_mail"
+        android:layout_below="@+id/tv_acc_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textSize="16sp"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:id="@+id/tv_acc_mob"
+        android:layout_below="@+id/tv_acc_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:paddingLeft="10dp"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/tv_acc_addr1"
+        android:layout_below="@+id/tv_acc_mob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textSize="16sp"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:id="@+id/tv_acc_addr2"
+        android:layout_below="@+id/tv_acc_addr1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"/>
+
+</RelativeLayout>
+<FrameLayout
+    android:id="@+id/flayout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_below="@+id/rl1"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittxt_box"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/rl1"
+        android:paddingRight="1dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_acc_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account status"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+<!--
+        <Button
+            android:id="@+id/btnAc_status"
+            android:layout_margin="8dp"
+            android:text=" Active "
+            android:textSize="16sp"
+            android:textColor="@color/activ_text_color"
+            android:textAllCaps="false"
+            android:background="@drawable/blue_border_box"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:visibility="visible"/>-->
+        <Button
+            android:id="@+id/btnAc_status"
+            android:text=" Active "
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@drawable/blue_border_box"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="visible"/>
+        <ImageView
+            android:id="@+id/img_active"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/activeimg"
+            android:scaleType="centerCrop"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2dp"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/img_inactive"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/inactiveimg"
+            android:scaleType="centerCrop"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2dp"
+            android:visibility="gone"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>
+    <RelativeLayout
+        android:id="@+id/ragreement_exp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittxt_box"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/flayout"
+        >
+
+        <TextView
+            android:id="@+id/tv_acc_exp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Document Expiry"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/tv_acc_exp_date"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingRight="8dp"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rChangepw"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittxt_box"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/ragreement_exp"
+        >
+
+        <TextView
+            android:id="@+id/tv_chngpw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change password"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_right_grey"
+            android:scaleType="fitXY"
+            android:paddingRight="5dp"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

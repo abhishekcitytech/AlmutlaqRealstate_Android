@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_color_new"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/profile_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:backgroundImage="@drawable/userprof_new"
+        fresco:placeholderImage="@drawable/userprof_new"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:pressedStateOverlayImage="@mipmap/ic_launcher_round"
+        fresco:roundAsCircle="true"
+        fresco:roundedCornerRadius="5dp"
+        fresco:roundingBorderColor="@color/White"
+        fresco:roundingBorderWidth="2dp" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:text="Mohammed Ibrahim"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Unit 1308, Jumerah, UAE"
+        android:textSize="14sp"
+        android:drawableLeft="@drawable/ic_location_white"
+        android:drawablePadding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_phn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="+971500542228"
+        android:textSize="14sp"
+        android:drawableLeft="@drawable/ic_phone_mobile"
+        android:drawablePadding="5dp"/>
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/new_login_button" android:state_pressed="true" /> <!-- pressed -->
+    <item android:drawable="@color/new_login_button" android:state_focused="true" /> <!-- focused -->
+    <item android:drawable="@color/white" /> <!-- default -->
+</selector>

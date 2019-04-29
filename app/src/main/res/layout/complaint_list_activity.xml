@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/toolbar_for_activity"
+             android:id="@+id/ctoolbar"/>
+
+    <FrameLayout
+        android:id="@+id/container_body_new"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <android.support.design.widget.TabLayout
+        android:id="@+id/clist_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:background="@color/White"
+        app:tabGravity="center"
+        app:tabIndicatorColor="@color/tool_blue"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/tool_blue"
+        app:tabTextAppearance="@style/MyCustomTextAppearance"
+        app:tabTextColor="@color/tab_bar"
+        android:layout_below="@+id/ctoolbar"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/clist_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/clist_tab_layout"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+</RelativeLayout>

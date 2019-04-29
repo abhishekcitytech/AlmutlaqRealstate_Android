@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/dialog_background">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/line"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:lineSpacingExtra="1dp"
+            android:text="Message"
+            android:textColor="@color/text_color_black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+        <!--android:textColor="#0c4879"-->
+        <View
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/btn_yes_one"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="2dp"
+            android:background="#c0c0c0"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_yes_one"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FFFFFF"
+            android:text="OK"
+            android:textColor="@color/Black"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:visibility="visible"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+                android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/imgAcknowledged"
+        android:src="@drawable/acknowledge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+       />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+<TextView
+    android:layout_marginTop="10dp"
+    android:id="@+id/tvStatus_title"
+    android:text="AC Maintainance"
+    android:textSize="14sp"
+    android:textColor="@color/Black"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"/>
+
+        <ImageView
+            android:id="@+id/img_statusClose"
+            android:src="@drawable/feedbacknew"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/imgsAcknowledged"
+            android:src="@drawable/ic_right_green"
+            android:layout_below="@+id/img_statusClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tvStatus_request"
+            android:text="Maintaance required"
+            android:layout_below="@+id/tvStatus_title"
+            android:textSize="13sp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingRight="40dp"/>
+
+        <TextView
+            android:id="@+id/tv_req_date"
+            android:text="2018-10-03"
+            android:layout_below="@+id/tvStatus_request"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/calendargray"
+            android:drawablePadding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_status_address"
+            android:text="Deira,PO Box 594,Dubai,UAE,B12345,F1"
+            android:layout_below="@+id/tv_req_date"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/mapgray"
+            android:drawablePadding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+
+
+<View
+    android:layout_below="@+id/tv_status_address"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/btn_grey"
+   />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

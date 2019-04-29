@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Mutlaq Service</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    ////////////For welcome screen/////////////////
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="start">Got It</string>
+
+    <string name="intro">Almutlaq Group is a closed joint stock company registered in Riyadh, Saudi Arabia. We have established and maintained a distinguished name in every field of our endeavors; which is illustrated through the highest quality of product, service and business for over 60 years.</string>
+
+    <array name="array_dot_active">
+        <item>@color/txt_header_color</item>
+        <item>@color/txt_header_color</item>
+        <item>@color/txt_header_color</item>
+        <item>@color/txt_header_color</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/tab_bar</item>
+        <item>@color/tab_bar</item>
+        <item>@color/tab_bar</item>
+        <item>@color/tab_bar</item>
+    </array>
+
+    <string name="hint_sptime">Choose booking requested time</string>
+
+    <string name="hint_restime">Response time</string>
+
+
+    ///decimal code for emojis
+    <string name="emoji_excellent">&#128515;</string> //Excellent
+    <string name="emoji_happy">&#128522;</string> //Very Good
+    <string name="emoji_good">&#128578;</string> //Good
+    <string name="emoji_ok">&#128542;</string> //Bad
+    <string name="emoji_bad">&#128544;</string> //very Bad
+
+
+    <string name="no_record">No Record Found!</string>
+
+    <string name="about_content">Mutlaq Al Mutlaq Real Estate was successfully established in 2003
+        and from the start the business grew rapidly. Mutlaq Al Mutlaq Real Estate is know to manage property
+        both residence and commercial. Mutlaq Al Mutlaq is now one of the reputed privately owned developers
+        as well as property consultants in the United Arab Emirates. We look forward to continue
+        providing you with good investment opportunity and a home to live in.</string>
+
+
+</resources>

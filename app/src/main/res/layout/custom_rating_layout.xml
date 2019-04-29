@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioButton
+        android:id="@+id/cvPercent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="1dp"
+        android:background="@drawable/checkpercent_bg_selector"
+        android:button="@null"
+        android:checked="false"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="100%"
+        android:textColor="@drawable/checkpercent_txt_selector"
+        android:textSize="14sp" />
+
+</RelativeLayout>
+
